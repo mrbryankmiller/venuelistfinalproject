@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FirebaseAuth
+
+
 
 
 
@@ -21,7 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        application.statusBarStyle = .LightContent
+        application.statusBarStyle = .Default
+        // Use Firebase library to configure APIs
+        FIRApp.configure()
+        FIRAuth.auth()?.signInAnonymouslyWithCompletion() { (user, error) in
+            // ...
+        }
+        
+        
+        
         return true
     }
 

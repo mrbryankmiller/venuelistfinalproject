@@ -19,7 +19,9 @@ class SIgnUPTableViewController: UITableViewController, UIImagePickerControllerD
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-    @IBOutlet weak var cityTextField: UITextField!
+
+    
+    let networkingService = NetworkingService()
     
     
 
@@ -38,12 +40,38 @@ class SIgnUPTableViewController: UITableViewController, UIImagePickerControllerD
     
     
     @IBAction func signUpAction(sender: AnyObject) {
+        
+        let data = UIImageJPEGRepresentation(self.userImageView.image!, 0.8)
+        
+        networkingService.signUp(emailTextField.text!, username: usernameTextField.text! , password: passwordTextField.text!, data: data!) 
+        
+//        let username: String 	 = usernameTextField.text!
+//       
+//        
+//  
+//        
+//        
+//        
+//        FIRAuth.auth()?.createUserWithEmail("kemgadi@kemgadi.com", password: "BryanRocksIOS") { (user, error) in
+//            // ...
+//            if error != nil {
+//                print("Error is \(error!.localizedDescription)")
+//            }
+//            else {
+//                print("Log in is successful ")
+//                print ("User displayname is \(user?.displayName)")
+//                print ("User email is \(user?.email)")
+//                print ("User Unique ID is \(user?.uid)")
+
+        
+    
     }
 
     
     @IBAction func choosePicture(sender: AnyObject) {
         let pickerController  = UIImagePickerController()
         pickerController.delegate = self
+        
         //crop and zoom in picture
         pickerController.allowsEditing = true
         

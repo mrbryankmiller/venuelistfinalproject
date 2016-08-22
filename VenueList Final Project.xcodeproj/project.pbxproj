@@ -17,15 +17,40 @@
 		1E9AE1861D6240F5000793FB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE1851D6240F5000793FB /* MapViewController.swift */; };
 		1E9AE1881D624122000793FB /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE1871D624122000793FB /* ProfileScreenViewController.swift */; };
 		1E9AE18A1D6241E5000793FB /* AddVenueTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE1891D6241E5000793FB /* AddVenueTableTableViewController.swift */; };
-		1E9AE18C1D62439F000793FB /* ExploreScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE18B1D62439F000793FB /* ExploreScreenViewController.swift */; };
 		1E9AE1AE1D637345000793FB /* VenueListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE1AD1D637345000793FB /* VenueListTableViewController.swift */; };
 		1E9AE1B01D63FE00000793FB /* secondFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE1AF1D63FE00000793FB /* secondFilterViewController.swift */; };
+		1EB6DBEE1D6B555900821244 /* CustomUiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6DBED1D6B555900821244 /* CustomUiImageView.swift */; };
+		1EB6DBF01D6B5A8900821244 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6DBEF1D6B5A8900821244 /* CustomButton.swift */; };
+		1EB6DBF21D6B5D0A00821244 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6DBF11D6B5D0A00821244 /* CustomTextfield.swift */; };
 		1EF998651D64337900F0D425 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF998641D64337900F0D425 /* ResetPasswordViewController.swift */; };
 		1EF9986A1D64C21300F0D425 /* SIgnUPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF998691D64C21300F0D425 /* SIgnUPTableViewController.swift */; };
 		1EFBC7F81D652D67000B0BCA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EFBC7F71D652D67000B0BCA /* GoogleService-Info.plist */; };
-		1EFBC7FA1D654FD5000B0BCA /* Firebase in Resources */ = {isa = PBXBuildFile; fileRef = 1EFBC7F91D654FD5000B0BCA /* Firebase */; };
 		1EFBC7FC1D655284000B0BCA /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFBC7FB1D655284000B0BCA /* libicucore.tbd */; };
 		1EFBC8021D6604AB000B0BCA /* temp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBC8011D6604AB000B0BCA /* temp.m */; };
+		1EFBC8071D660AD9000B0BCA /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBC8061D660AD9000B0BCA /* NetworkingService.swift */; };
+		1EFE30171D664F2D00A4384D /* FirebaseDynamicLinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE2FFA1D664F2D00A4384D /* FirebaseDynamicLinks.framework */; };
+		1EFE30181D664F2D00A4384D /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE2FFD1D664F2D00A4384D /* FirebaseMessaging.framework */; };
+		1EFE30191D664F2D00A4384D /* GoogleIPhoneUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE2FFE1D664F2D00A4384D /* GoogleIPhoneUtilities.framework */; };
+		1EFE301A1D664F2D00A4384D /* FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30001D664F2D00A4384D /* FirebaseRemoteConfig.framework */; };
+		1EFE301B1D664F2D00A4384D /* GoogleIPhoneUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30011D664F2D00A4384D /* GoogleIPhoneUtilities.framework */; };
+		1EFE301C1D664F2D00A4384D /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30031D664F2D00A4384D /* FirebaseStorage.framework */; };
+		1EFE301D1D664F2D00A4384D /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30041D664F2D00A4384D /* GoogleNetworkingUtilities.framework */; };
+		1EFE301E1D664F2D00A4384D /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30061D664F2D00A4384D /* GoogleMobileAds.framework */; };
+		1EFE301F1D664F2D00A4384D /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30081D664F2D00A4384D /* FirebaseAnalytics.framework */; };
+		1EFE30201D664F2D00A4384D /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30091D664F2D00A4384D /* FirebaseInstanceID.framework */; };
+		1EFE30211D664F2D00A4384D /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE300A1D664F2D00A4384D /* GoogleInterchangeUtilities.framework */; };
+		1EFE30221D664F2D00A4384D /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE300B1D664F2D00A4384D /* GoogleSymbolUtilities.framework */; };
+		1EFE30231D664F2D00A4384D /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE300C1D664F2D00A4384D /* GoogleUtilities.framework */; };
+		1EFE30241D664F2D00A4384D /* FirebaseAppIndexing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE300E1D664F2D00A4384D /* FirebaseAppIndexing.framework */; };
+		1EFE30251D664F2D00A4384D /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30101D664F2D00A4384D /* FirebaseAuth.framework */; };
+		1EFE30261D664F2D00A4384D /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30111D664F2D00A4384D /* GoogleNetworkingUtilities.framework */; };
+		1EFE30271D664F2D00A4384D /* GoogleParsingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30121D664F2D00A4384D /* GoogleParsingUtilities.framework */; };
+		1EFE30281D664F2D00A4384D /* FirebaseCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30141D664F2D00A4384D /* FirebaseCrash.framework */; };
+		1EFE30291D664F2D00A4384D /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30161D664F2D00A4384D /* FirebaseDatabase.framework */; };
+		1EFE302B1D66546300A4384D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE302A1D66546300A4384D /* libc++.tbd */; };
+		1EFE302D1D66547200A4384D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE302C1D66547200A4384D /* CFNetwork.framework */; };
+		1EFE302F1D6654A400A4384D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE302E1D6654A400A4384D /* Security.framework */; };
+		1EFE30311D6654AF00A4384D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30301D6654AF00A4384D /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,17 +66,45 @@
 		1E9AE1851D6240F5000793FB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1E9AE1871D624122000793FB /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
 		1E9AE1891D6241E5000793FB /* AddVenueTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVenueTableTableViewController.swift; sourceTree = "<group>"; };
-		1E9AE18B1D62439F000793FB /* ExploreScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreScreenViewController.swift; path = ../ExploreScreenViewController.swift; sourceTree = "<group>"; };
 		1E9AE1AD1D637345000793FB /* VenueListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueListTableViewController.swift; path = ../VenueListTableViewController.swift; sourceTree = "<group>"; };
 		1E9AE1AF1D63FE00000793FB /* secondFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondFilterViewController.swift; sourceTree = "<group>"; };
+		1EB6DBED1D6B555900821244 /* CustomUiImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUiImageView.swift; sourceTree = "<group>"; };
+		1EB6DBEF1D6B5A8900821244 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		1EB6DBF11D6B5D0A00821244 /* CustomTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
 		1EF998641D64337900F0D425 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		1EF998691D64C21300F0D425 /* SIgnUPTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SIgnUPTableViewController.swift; path = ../SIgnUPTableViewController.swift; sourceTree = "<group>"; };
 		1EFBC7F71D652D67000B0BCA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1EFBC7F91D654FD5000B0BCA /* Firebase */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Firebase; path = "VenueList Final Project/Firebase"; sourceTree = "<group>"; };
 		1EFBC7FB1D655284000B0BCA /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		1EFBC7FE1D6602F5000B0BCA /* VenueList Final Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VenueList Final Project-Bridging-Header.h"; sourceTree = "<group>"; };
 		1EFBC8011D6604AB000B0BCA /* temp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = temp.m; path = ../../../.Trash/temp.m; sourceTree = "<group>"; };
-		1EFBC8031D66050F000B0BCA /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Firebase/Firebase.h; sourceTree = "<group>"; };
+		1EFBC8061D660AD9000B0BCA /* NetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		1EFE2FFA1D664F2D00A4384D /* FirebaseDynamicLinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDynamicLinks.framework; sourceTree = "<group>"; };
+		1EFE2FFB1D664F2D00A4384D /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		1EFE2FFD1D664F2D00A4384D /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = "<group>"; };
+		1EFE2FFE1D664F2D00A4384D /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
+		1EFE30001D664F2D00A4384D /* FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseRemoteConfig.framework; sourceTree = "<group>"; };
+		1EFE30011D664F2D00A4384D /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
+		1EFE30031D664F2D00A4384D /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseStorage.framework; sourceTree = "<group>"; };
+		1EFE30041D664F2D00A4384D /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		1EFE30061D664F2D00A4384D /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		1EFE30081D664F2D00A4384D /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		1EFE30091D664F2D00A4384D /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		1EFE300A1D664F2D00A4384D /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		1EFE300B1D664F2D00A4384D /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		1EFE300C1D664F2D00A4384D /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		1EFE300E1D664F2D00A4384D /* FirebaseAppIndexing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAppIndexing.framework; sourceTree = "<group>"; };
+		1EFE30101D664F2D00A4384D /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = "<group>"; };
+		1EFE30111D664F2D00A4384D /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		1EFE30121D664F2D00A4384D /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleParsingUtilities.framework; sourceTree = "<group>"; };
+		1EFE30141D664F2D00A4384D /* FirebaseCrash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCrash.framework; sourceTree = "<group>"; };
+		1EFE30161D664F2D00A4384D /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
+		1EFE302A1D66546300A4384D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		1EFE302C1D66547200A4384D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1EFE302E1D6654A400A4384D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1EFE30301D6654AF00A4384D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1EFE30321D66556900A4384D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1EFE30341D66557A00A4384D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		1EFE30361D66565D00A4384D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +112,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFE30311D6654AF00A4384D /* SystemConfiguration.framework in Frameworks */,
+				1EFE302F1D6654A400A4384D /* Security.framework in Frameworks */,
+				1EFE302D1D66547200A4384D /* CFNetwork.framework in Frameworks */,
+				1EFE302B1D66546300A4384D /* libc++.tbd in Frameworks */,
+				1EFE301E1D664F2D00A4384D /* GoogleMobileAds.framework in Frameworks */,
+				1EFE301D1D664F2D00A4384D /* GoogleNetworkingUtilities.framework in Frameworks */,
+				1EFE30181D664F2D00A4384D /* FirebaseMessaging.framework in Frameworks */,
+				1EFE301B1D664F2D00A4384D /* GoogleIPhoneUtilities.framework in Frameworks */,
+				1EFE30291D664F2D00A4384D /* FirebaseDatabase.framework in Frameworks */,
+				1EFE30221D664F2D00A4384D /* GoogleSymbolUtilities.framework in Frameworks */,
+				1EFE30251D664F2D00A4384D /* FirebaseAuth.framework in Frameworks */,
+				1EFE30241D664F2D00A4384D /* FirebaseAppIndexing.framework in Frameworks */,
+				1EFE30201D664F2D00A4384D /* FirebaseInstanceID.framework in Frameworks */,
+				1EFE30231D664F2D00A4384D /* GoogleUtilities.framework in Frameworks */,
+				1EFE301F1D664F2D00A4384D /* FirebaseAnalytics.framework in Frameworks */,
+				1EFE301A1D664F2D00A4384D /* FirebaseRemoteConfig.framework in Frameworks */,
 				1EFBC7FC1D655284000B0BCA /* libicucore.tbd in Frameworks */,
+				1EFE30171D664F2D00A4384D /* FirebaseDynamicLinks.framework in Frameworks */,
+				1EFE30211D664F2D00A4384D /* GoogleInterchangeUtilities.framework in Frameworks */,
+				1EFE30281D664F2D00A4384D /* FirebaseCrash.framework in Frameworks */,
+				1EFE30191D664F2D00A4384D /* GoogleIPhoneUtilities.framework in Frameworks */,
+				1EFE301C1D664F2D00A4384D /* FirebaseStorage.framework in Frameworks */,
+				1EFE30271D664F2D00A4384D /* GoogleParsingUtilities.framework in Frameworks */,
+				1EFE30261D664F2D00A4384D /* GoogleNetworkingUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,8 +145,26 @@
 		1E9AE15F1D623F7F000793FB = {
 			isa = PBXGroup;
 			children = (
+				1EB6DBF31D6B610B00821244 /* New Group */,
+				1EFE30361D66565D00A4384D /* libz.tbd */,
+				1EFE30341D66557A00A4384D /* AddressBook.framework */,
+				1EFE30321D66556900A4384D /* libsqlite3.tbd */,
+				1EFE30301D6654AF00A4384D /* SystemConfiguration.framework */,
+				1EFE302E1D6654A400A4384D /* Security.framework */,
+				1EFE302C1D66547200A4384D /* CFNetwork.framework */,
+				1EFE302A1D66546300A4384D /* libc++.tbd */,
 				1EFBC7FB1D655284000B0BCA /* libicucore.tbd */,
-				1EFBC7F91D654FD5000B0BCA /* Firebase */,
+				1EFE2FF91D664F2D00A4384D /* DynamicLinks */,
+				1EFE2FFB1D664F2D00A4384D /* Firebase.h */,
+				1EFE2FFC1D664F2D00A4384D /* Messaging */,
+				1EFE2FFF1D664F2D00A4384D /* RemoteConfig */,
+				1EFE30021D664F2D00A4384D /* Storage */,
+				1EFE30051D664F2D00A4384D /* AdMob */,
+				1EFE30071D664F2D00A4384D /* Analytics */,
+				1EFE300D1D664F2D00A4384D /* AppIndexing */,
+				1EFE300F1D664F2D00A4384D /* Auth */,
+				1EFE30131D664F2D00A4384D /* Crash */,
+				1EFE30151D664F2D00A4384D /* Database */,
 				1E9AE16A1D623F7F000793FB /* VenueList Final Project */,
 				1E9AE1691D623F7F000793FB /* Products */,
 			);
@@ -88,12 +182,14 @@
 			isa = PBXGroup;
 			children = (
 				1E9AE16B1D623F7F000793FB /* AppDelegate.swift */,
-				1E9AE16D1D623F7F000793FB /* ViewController.swift */,
 				1E9AE1831D6240C1000793FB /* FilterTableViewController.swift */,
 				1E9AE1851D6240F5000793FB /* MapViewController.swift */,
 				1E9AE1871D624122000793FB /* ProfileScreenViewController.swift */,
 				1E9AE1891D6241E5000793FB /* AddVenueTableTableViewController.swift */,
 				1E9AE16F1D623F7F000793FB /* Main.storyboard */,
+				1EB6DBF11D6B5D0A00821244 /* CustomTextfield.swift */,
+				1EB6DBEF1D6B5A8900821244 /* CustomButton.swift */,
+				1EB6DBED1D6B555900821244 /* CustomUiImageView.swift */,
 				1E9AE1AD1D637345000793FB /* VenueListTableViewController.swift */,
 				1E9AE1AF1D63FE00000793FB /* secondFilterViewController.swift */,
 				1E9AE1721D623F7F000793FB /* Assets.xcassets */,
@@ -106,17 +202,114 @@
 			path = "VenueList Final Project";
 			sourceTree = "<group>";
 		};
+		1EB6DBF31D6B610B00821244 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			path = AdMob;
+			sourceTree = "<group>";
+		};
 		1EF998661D64338800F0D425 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				1E9AE16D1D623F7F000793FB /* ViewController.swift */,
 				1EF998691D64C21300F0D425 /* SIgnUPTableViewController.swift */,
-				1E9AE18B1D62439F000793FB /* ExploreScreenViewController.swift */,
 				1E9AE17D1D624065000793FB /* LoginViewController.swift */,
 				1EF998641D64337900F0D425 /* ResetPasswordViewController.swift */,
-				1EFBC8031D66050F000B0BCA /* Firebase.h */,
 				1EFBC8011D6604AB000B0BCA /* temp.m */,
+				1EFBC8061D660AD9000B0BCA /* NetworkingService.swift */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		1EFE2FF91D664F2D00A4384D /* DynamicLinks */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE2FFA1D664F2D00A4384D /* FirebaseDynamicLinks.framework */,
+			);
+			path = DynamicLinks;
+			sourceTree = "<group>";
+		};
+		1EFE2FFC1D664F2D00A4384D /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE2FFD1D664F2D00A4384D /* FirebaseMessaging.framework */,
+				1EFE2FFE1D664F2D00A4384D /* GoogleIPhoneUtilities.framework */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		1EFE2FFF1D664F2D00A4384D /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE30001D664F2D00A4384D /* FirebaseRemoteConfig.framework */,
+				1EFE30011D664F2D00A4384D /* GoogleIPhoneUtilities.framework */,
+			);
+			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		1EFE30021D664F2D00A4384D /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE30031D664F2D00A4384D /* FirebaseStorage.framework */,
+				1EFE30041D664F2D00A4384D /* GoogleNetworkingUtilities.framework */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		1EFE30051D664F2D00A4384D /* AdMob */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE30061D664F2D00A4384D /* GoogleMobileAds.framework */,
+			);
+			path = AdMob;
+			sourceTree = "<group>";
+		};
+		1EFE30071D664F2D00A4384D /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE30081D664F2D00A4384D /* FirebaseAnalytics.framework */,
+				1EFE30091D664F2D00A4384D /* FirebaseInstanceID.framework */,
+				1EFE300A1D664F2D00A4384D /* GoogleInterchangeUtilities.framework */,
+				1EFE300B1D664F2D00A4384D /* GoogleSymbolUtilities.framework */,
+				1EFE300C1D664F2D00A4384D /* GoogleUtilities.framework */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		1EFE300D1D664F2D00A4384D /* AppIndexing */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE300E1D664F2D00A4384D /* FirebaseAppIndexing.framework */,
+			);
+			path = AppIndexing;
+			sourceTree = "<group>";
+		};
+		1EFE300F1D664F2D00A4384D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE30101D664F2D00A4384D /* FirebaseAuth.framework */,
+				1EFE30111D664F2D00A4384D /* GoogleNetworkingUtilities.framework */,
+				1EFE30121D664F2D00A4384D /* GoogleParsingUtilities.framework */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1EFE30131D664F2D00A4384D /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE30141D664F2D00A4384D /* FirebaseCrash.framework */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		1EFE30151D664F2D00A4384D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE30161D664F2D00A4384D /* FirebaseDatabase.framework */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +370,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EFBC7FA1D654FD5000B0BCA /* Firebase in Resources */,
 				1E9AE1761D623F7F000793FB /* LaunchScreen.storyboard in Resources */,
 				1EFBC7F81D652D67000B0BCA /* GoogleService-Info.plist in Resources */,
 				1E9AE1731D623F7F000793FB /* Assets.xcassets in Resources */,
@@ -196,15 +388,18 @@
 				1E9AE1B01D63FE00000793FB /* secondFilterViewController.swift in Sources */,
 				1E9AE17E1D624065000793FB /* LoginViewController.swift in Sources */,
 				1E9AE1841D6240C1000793FB /* FilterTableViewController.swift in Sources */,
+				1EB6DBF21D6B5D0A00821244 /* CustomTextfield.swift in Sources */,
 				1EF998651D64337900F0D425 /* ResetPasswordViewController.swift in Sources */,
+				1EFBC8071D660AD9000B0BCA /* NetworkingService.swift in Sources */,
 				1E9AE16E1D623F7F000793FB /* ViewController.swift in Sources */,
 				1E9AE18A1D6241E5000793FB /* AddVenueTableTableViewController.swift in Sources */,
 				1E9AE1881D624122000793FB /* ProfileScreenViewController.swift in Sources */,
 				1E9AE16C1D623F7F000793FB /* AppDelegate.swift in Sources */,
 				1E9AE1AE1D637345000793FB /* VenueListTableViewController.swift in Sources */,
 				1E9AE1861D6240F5000793FB /* MapViewController.swift in Sources */,
-				1E9AE18C1D62439F000793FB /* ExploreScreenViewController.swift in Sources */,
 				1EF9986A1D64C21300F0D425 /* SIgnUPTableViewController.swift in Sources */,
+				1EB6DBEE1D6B555900821244 /* CustomUiImageView.swift in Sources */,
+				1EB6DBF01D6B5A8900821244 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,9 +516,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DynamicLinks",
+					"$(PROJECT_DIR)/Messaging",
+					"$(PROJECT_DIR)/RemoteConfig",
+					"$(PROJECT_DIR)/Storage",
+					"$(PROJECT_DIR)/AdMob",
+					"$(PROJECT_DIR)/Analytics",
+					"$(PROJECT_DIR)/AppIndexing",
+					"$(PROJECT_DIR)/Auth",
+					"$(PROJECT_DIR)/Crash",
+					"$(PROJECT_DIR)/Database",
+				);
 				INFOPLIST_FILE = "VenueList Final Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-objC";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ironyard.VenueList-Final-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "VenueList Final Project/VenueList Final Project-Bridging-Header.h";
@@ -337,9 +545,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DynamicLinks",
+					"$(PROJECT_DIR)/Messaging",
+					"$(PROJECT_DIR)/RemoteConfig",
+					"$(PROJECT_DIR)/Storage",
+					"$(PROJECT_DIR)/AdMob",
+					"$(PROJECT_DIR)/Analytics",
+					"$(PROJECT_DIR)/AppIndexing",
+					"$(PROJECT_DIR)/Auth",
+					"$(PROJECT_DIR)/Crash",
+					"$(PROJECT_DIR)/Database",
+				);
 				INFOPLIST_FILE = "VenueList Final Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-objC";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ironyard.VenueList-Final-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "VenueList Final Project/VenueList Final Project-Bridging-Header.h";
