@@ -39,7 +39,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginAction(sender: AnyObject){
         networkService.signIn(emailTextField.text!, password: passwordTextField.text!)
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login")
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home")
         presentViewController(vc, animated: true, completion: nil)
         
         

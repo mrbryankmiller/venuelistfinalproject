@@ -13,15 +13,16 @@
 		1E9AE1731D623F7F000793FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9AE1721D623F7F000793FB /* Assets.xcassets */; };
 		1E9AE1761D623F7F000793FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9AE1741D623F7F000793FB /* LaunchScreen.storyboard */; };
 		1E9AE17E1D624065000793FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE17D1D624065000793FB /* LoginViewController.swift */; };
-		1E9AE1841D6240C1000793FB /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE1831D6240C1000793FB /* FilterTableViewController.swift */; };
-		1E9AE1861D6240F5000793FB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE1851D6240F5000793FB /* MapViewController.swift */; };
-		1E9AE1881D624122000793FB /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE1871D624122000793FB /* ProfileScreenViewController.swift */; };
 		1E9AE18A1D6241E5000793FB /* AddVenueTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE1891D6241E5000793FB /* AddVenueTableTableViewController.swift */; };
 		1E9AE1AE1D637345000793FB /* VenueListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE1AD1D637345000793FB /* VenueListTableViewController.swift */; };
-		1E9AE1B01D63FE00000793FB /* secondFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AE1AF1D63FE00000793FB /* secondFilterViewController.swift */; };
 		1EB6DBEE1D6B555900821244 /* CustomUiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6DBED1D6B555900821244 /* CustomUiImageView.swift */; };
 		1EB6DBF01D6B5A8900821244 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6DBEF1D6B5A8900821244 /* CustomButton.swift */; };
 		1EB6DBF21D6B5D0A00821244 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6DBF11D6B5D0A00821244 /* CustomTextfield.swift */; };
+		1EB6DBF51D6BD7BC00821244 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6DBF41D6BD7BC00821244 /* MyProfileViewController.swift */; };
+		1EEFEFD01D6CAD4500904729 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFEFCF1D6CAD4500904729 /* User.swift */; };
+		1EEFEFD41D6E1A0700904729 /* PostVenueFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFEFD31D6E1A0700904729 /* PostVenueFile.swift */; };
+		1EEFEFD61D6E67F100904729 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFEFD51D6E67F100904729 /* PostTableViewCell.swift */; };
+		1EEFEFD81D6FF2E600904729 /* VenueDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFEFD71D6FF2E600904729 /* VenueDetailTableViewController.swift */; };
 		1EF998651D64337900F0D425 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF998641D64337900F0D425 /* ResetPasswordViewController.swift */; };
 		1EF9986A1D64C21300F0D425 /* SIgnUPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF998691D64C21300F0D425 /* SIgnUPTableViewController.swift */; };
 		1EFBC7F81D652D67000B0BCA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EFBC7F71D652D67000B0BCA /* GoogleService-Info.plist */; };
@@ -31,8 +32,6 @@
 		1EFE30171D664F2D00A4384D /* FirebaseDynamicLinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE2FFA1D664F2D00A4384D /* FirebaseDynamicLinks.framework */; };
 		1EFE30181D664F2D00A4384D /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE2FFD1D664F2D00A4384D /* FirebaseMessaging.framework */; };
 		1EFE30191D664F2D00A4384D /* GoogleIPhoneUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE2FFE1D664F2D00A4384D /* GoogleIPhoneUtilities.framework */; };
-		1EFE301A1D664F2D00A4384D /* FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30001D664F2D00A4384D /* FirebaseRemoteConfig.framework */; };
-		1EFE301B1D664F2D00A4384D /* GoogleIPhoneUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30011D664F2D00A4384D /* GoogleIPhoneUtilities.framework */; };
 		1EFE301C1D664F2D00A4384D /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30031D664F2D00A4384D /* FirebaseStorage.framework */; };
 		1EFE301D1D664F2D00A4384D /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30041D664F2D00A4384D /* GoogleNetworkingUtilities.framework */; };
 		1EFE301E1D664F2D00A4384D /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFE30061D664F2D00A4384D /* GoogleMobileAds.framework */; };
@@ -62,28 +61,27 @@
 		1E9AE1751D623F7F000793FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E9AE1771D623F7F000793FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E9AE17D1D624065000793FB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		1E9AE1831D6240C1000793FB /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
-		1E9AE1851D6240F5000793FB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		1E9AE1871D624122000793FB /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
 		1E9AE1891D6241E5000793FB /* AddVenueTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVenueTableTableViewController.swift; sourceTree = "<group>"; };
 		1E9AE1AD1D637345000793FB /* VenueListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueListTableViewController.swift; path = ../VenueListTableViewController.swift; sourceTree = "<group>"; };
-		1E9AE1AF1D63FE00000793FB /* secondFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondFilterViewController.swift; sourceTree = "<group>"; };
-		1EB6DBED1D6B555900821244 /* CustomUiImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUiImageView.swift; sourceTree = "<group>"; };
-		1EB6DBEF1D6B5A8900821244 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		1EB6DBF11D6B5D0A00821244 /* CustomTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
+		1EB6DBED1D6B555900821244 /* CustomUiImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomUiImageView.swift; path = "../VenueList Final Project/CustomUiImageView.swift"; sourceTree = "<group>"; };
+		1EB6DBEF1D6B5A8900821244 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = "../VenueList Final Project/CustomButton.swift"; sourceTree = "<group>"; };
+		1EB6DBF11D6B5D0A00821244 /* CustomTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextfield.swift; path = "../VenueList Final Project/CustomTextfield.swift"; sourceTree = "<group>"; };
+		1EB6DBF41D6BD7BC00821244 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyProfileViewController.swift; path = ../MyProfileViewController.swift; sourceTree = "<group>"; };
+		1EEFEFCF1D6CAD4500904729 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
+		1EEFEFD31D6E1A0700904729 /* PostVenueFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostVenueFile.swift; path = "../VenueList Final Project/PostVenueFile.swift"; sourceTree = "<group>"; };
+		1EEFEFD51D6E67F100904729 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		1EEFEFD71D6FF2E600904729 /* VenueDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailTableViewController.swift; sourceTree = "<group>"; };
 		1EF998641D64337900F0D425 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		1EF998691D64C21300F0D425 /* SIgnUPTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SIgnUPTableViewController.swift; path = ../SIgnUPTableViewController.swift; sourceTree = "<group>"; };
 		1EFBC7F71D652D67000B0BCA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1EFBC7FB1D655284000B0BCA /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		1EFBC7FE1D6602F5000B0BCA /* VenueList Final Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VenueList Final Project-Bridging-Header.h"; sourceTree = "<group>"; };
+		1EFBC7FE1D6602F5000B0BCA /* VenueList Final Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VenueList Final Project-Bridging-Header.h"; path = "../VenueList Final Project/VenueList Final Project-Bridging-Header.h"; sourceTree = "<group>"; };
 		1EFBC8011D6604AB000B0BCA /* temp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = temp.m; path = ../../../.Trash/temp.m; sourceTree = "<group>"; };
-		1EFBC8061D660AD9000B0BCA /* NetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		1EFBC8061D660AD9000B0BCA /* NetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkingService.swift; path = "../VenueList Final Project/NetworkingService.swift"; sourceTree = "<group>"; };
 		1EFE2FFA1D664F2D00A4384D /* FirebaseDynamicLinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDynamicLinks.framework; sourceTree = "<group>"; };
-		1EFE2FFB1D664F2D00A4384D /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		1EFE2FFB1D664F2D00A4384D /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = ../Firebase.h; sourceTree = "<group>"; };
 		1EFE2FFD1D664F2D00A4384D /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = "<group>"; };
 		1EFE2FFE1D664F2D00A4384D /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
-		1EFE30001D664F2D00A4384D /* FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseRemoteConfig.framework; sourceTree = "<group>"; };
-		1EFE30011D664F2D00A4384D /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
 		1EFE30031D664F2D00A4384D /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseStorage.framework; sourceTree = "<group>"; };
 		1EFE30041D664F2D00A4384D /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
 		1EFE30061D664F2D00A4384D /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 				1EFE301E1D664F2D00A4384D /* GoogleMobileAds.framework in Frameworks */,
 				1EFE301D1D664F2D00A4384D /* GoogleNetworkingUtilities.framework in Frameworks */,
 				1EFE30181D664F2D00A4384D /* FirebaseMessaging.framework in Frameworks */,
-				1EFE301B1D664F2D00A4384D /* GoogleIPhoneUtilities.framework in Frameworks */,
 				1EFE30291D664F2D00A4384D /* FirebaseDatabase.framework in Frameworks */,
 				1EFE30221D664F2D00A4384D /* GoogleSymbolUtilities.framework in Frameworks */,
 				1EFE30251D664F2D00A4384D /* FirebaseAuth.framework in Frameworks */,
@@ -127,7 +124,6 @@
 				1EFE30201D664F2D00A4384D /* FirebaseInstanceID.framework in Frameworks */,
 				1EFE30231D664F2D00A4384D /* GoogleUtilities.framework in Frameworks */,
 				1EFE301F1D664F2D00A4384D /* FirebaseAnalytics.framework in Frameworks */,
-				1EFE301A1D664F2D00A4384D /* FirebaseRemoteConfig.framework in Frameworks */,
 				1EFBC7FC1D655284000B0BCA /* libicucore.tbd in Frameworks */,
 				1EFE30171D664F2D00A4384D /* FirebaseDynamicLinks.framework in Frameworks */,
 				1EFE30211D664F2D00A4384D /* GoogleInterchangeUtilities.framework in Frameworks */,
@@ -145,26 +141,11 @@
 		1E9AE15F1D623F7F000793FB = {
 			isa = PBXGroup;
 			children = (
-				1EB6DBF31D6B610B00821244 /* New Group */,
 				1EFE30361D66565D00A4384D /* libz.tbd */,
-				1EFE30341D66557A00A4384D /* AddressBook.framework */,
-				1EFE30321D66556900A4384D /* libsqlite3.tbd */,
-				1EFE30301D6654AF00A4384D /* SystemConfiguration.framework */,
-				1EFE302E1D6654A400A4384D /* Security.framework */,
-				1EFE302C1D66547200A4384D /* CFNetwork.framework */,
 				1EFE302A1D66546300A4384D /* libc++.tbd */,
 				1EFBC7FB1D655284000B0BCA /* libicucore.tbd */,
-				1EFE2FF91D664F2D00A4384D /* DynamicLinks */,
-				1EFE2FFB1D664F2D00A4384D /* Firebase.h */,
-				1EFE2FFC1D664F2D00A4384D /* Messaging */,
-				1EFE2FFF1D664F2D00A4384D /* RemoteConfig */,
-				1EFE30021D664F2D00A4384D /* Storage */,
-				1EFE30051D664F2D00A4384D /* AdMob */,
-				1EFE30071D664F2D00A4384D /* Analytics */,
-				1EFE300D1D664F2D00A4384D /* AppIndexing */,
-				1EFE300F1D664F2D00A4384D /* Auth */,
-				1EFE30131D664F2D00A4384D /* Crash */,
-				1EFE30151D664F2D00A4384D /* Database */,
+				1EFE30321D66556900A4384D /* libsqlite3.tbd */,
+				1EEFEFD21D6DFD8500904729 /* Firebase Frameworks */,
 				1E9AE16A1D623F7F000793FB /* VenueList Final Project */,
 				1E9AE1691D623F7F000793FB /* Products */,
 			);
@@ -181,46 +162,78 @@
 		1E9AE16A1D623F7F000793FB /* VenueList Final Project */ = {
 			isa = PBXGroup;
 			children = (
-				1E9AE16B1D623F7F000793FB /* AppDelegate.swift */,
-				1E9AE1831D6240C1000793FB /* FilterTableViewController.swift */,
-				1E9AE1851D6240F5000793FB /* MapViewController.swift */,
-				1E9AE1871D624122000793FB /* ProfileScreenViewController.swift */,
-				1E9AE1891D6241E5000793FB /* AddVenueTableTableViewController.swift */,
-				1E9AE16F1D623F7F000793FB /* Main.storyboard */,
-				1EB6DBF11D6B5D0A00821244 /* CustomTextfield.swift */,
-				1EB6DBEF1D6B5A8900821244 /* CustomButton.swift */,
-				1EB6DBED1D6B555900821244 /* CustomUiImageView.swift */,
-				1E9AE1AD1D637345000793FB /* VenueListTableViewController.swift */,
-				1E9AE1AF1D63FE00000793FB /* secondFilterViewController.swift */,
-				1E9AE1721D623F7F000793FB /* Assets.xcassets */,
-				1E9AE1741D623F7F000793FB /* LaunchScreen.storyboard */,
-				1E9AE1771D623F7F000793FB /* Info.plist */,
-				1EFBC7F71D652D67000B0BCA /* GoogleService-Info.plist */,
-				1EF998661D64338800F0D425 /* Login */,
-				1EFBC7FE1D6602F5000B0BCA /* VenueList Final Project-Bridging-Header.h */,
+				1EF998661D64338800F0D425 /* ViewControllers */,
+				1EB6DBF31D6B610B00821244 /* Model */,
 			);
 			path = "VenueList Final Project";
 			sourceTree = "<group>";
 		};
-		1EB6DBF31D6B610B00821244 /* New Group */ = {
+		1EB6DBF31D6B610B00821244 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1EB6DBED1D6B555900821244 /* CustomUiImageView.swift */,
+				1EB6DBEF1D6B5A8900821244 /* CustomButton.swift */,
+				1EB6DBF11D6B5D0A00821244 /* CustomTextfield.swift */,
+				1EFBC8061D660AD9000B0BCA /* NetworkingService.swift */,
+				1EEFEFCF1D6CAD4500904729 /* User.swift */,
+				1EEFEFD31D6E1A0700904729 /* PostVenueFile.swift */,
+				1EEFEFD51D6E67F100904729 /* PostTableViewCell.swift */,
+				1EFE2FFB1D664F2D00A4384D /* Firebase.h */,
+				1EFBC8011D6604AB000B0BCA /* temp.m */,
+				1EFBC7FE1D6602F5000B0BCA /* VenueList Final Project-Bridging-Header.h */,
+				1EEFEFD11D6DFD2300904729 /* Supporting Files */,
 			);
-			name = "New Group";
-			path = AdMob;
+			name = Model;
+			path = ../AdMob;
 			sourceTree = "<group>";
 		};
-		1EF998661D64338800F0D425 /* Login */ = {
+		1EEFEFD11D6DFD2300904729 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E9AE1741D623F7F000793FB /* LaunchScreen.storyboard */,
+				1E9AE16F1D623F7F000793FB /* Main.storyboard */,
+				1E9AE1721D623F7F000793FB /* Assets.xcassets */,
+				1EFBC7F71D652D67000B0BCA /* GoogleService-Info.plist */,
+				1E9AE1771D623F7F000793FB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = "../VenueList Final Project";
+			sourceTree = "<group>";
+		};
+		1EEFEFD21D6DFD8500904729 /* Firebase Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE30341D66557A00A4384D /* AddressBook.framework */,
+				1EFE30301D6654AF00A4384D /* SystemConfiguration.framework */,
+				1EFE302E1D6654A400A4384D /* Security.framework */,
+				1EFE302C1D66547200A4384D /* CFNetwork.framework */,
+				1EFE2FF91D664F2D00A4384D /* DynamicLinks */,
+				1EFE2FFC1D664F2D00A4384D /* Messaging */,
+				1EFE30021D664F2D00A4384D /* Storage */,
+				1EFE30051D664F2D00A4384D /* AdMob */,
+				1EFE30071D664F2D00A4384D /* Analytics */,
+				1EFE300D1D664F2D00A4384D /* AppIndexing */,
+				1EFE300F1D664F2D00A4384D /* Auth */,
+				1EFE30131D664F2D00A4384D /* Crash */,
+				1EFE30151D664F2D00A4384D /* Database */,
+			);
+			name = "Firebase Frameworks";
+			sourceTree = "<group>";
+		};
+		1EF998661D64338800F0D425 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E9AE16B1D623F7F000793FB /* AppDelegate.swift */,
+				1E9AE1AD1D637345000793FB /* VenueListTableViewController.swift */,
+				1E9AE1891D6241E5000793FB /* AddVenueTableTableViewController.swift */,
 				1E9AE16D1D623F7F000793FB /* ViewController.swift */,
 				1EF998691D64C21300F0D425 /* SIgnUPTableViewController.swift */,
 				1E9AE17D1D624065000793FB /* LoginViewController.swift */,
 				1EF998641D64337900F0D425 /* ResetPasswordViewController.swift */,
-				1EFBC8011D6604AB000B0BCA /* temp.m */,
-				1EFBC8061D660AD9000B0BCA /* NetworkingService.swift */,
+				1EB6DBF41D6BD7BC00821244 /* MyProfileViewController.swift */,
+				1EEFEFD71D6FF2E600904729 /* VenueDetailTableViewController.swift */,
 			);
-			name = Login;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		1EFE2FF91D664F2D00A4384D /* DynamicLinks */ = {
@@ -238,15 +251,6 @@
 				1EFE2FFE1D664F2D00A4384D /* GoogleIPhoneUtilities.framework */,
 			);
 			path = Messaging;
-			sourceTree = "<group>";
-		};
-		1EFE2FFF1D664F2D00A4384D /* RemoteConfig */ = {
-			isa = PBXGroup;
-			children = (
-				1EFE30001D664F2D00A4384D /* FirebaseRemoteConfig.framework */,
-				1EFE30011D664F2D00A4384D /* GoogleIPhoneUtilities.framework */,
-			);
-			path = RemoteConfig;
 			sourceTree = "<group>";
 		};
 		1EFE30021D664F2D00A4384D /* Storage */ = {
@@ -385,21 +389,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EFBC8021D6604AB000B0BCA /* temp.m in Sources */,
-				1E9AE1B01D63FE00000793FB /* secondFilterViewController.swift in Sources */,
 				1E9AE17E1D624065000793FB /* LoginViewController.swift in Sources */,
-				1E9AE1841D6240C1000793FB /* FilterTableViewController.swift in Sources */,
 				1EB6DBF21D6B5D0A00821244 /* CustomTextfield.swift in Sources */,
 				1EF998651D64337900F0D425 /* ResetPasswordViewController.swift in Sources */,
 				1EFBC8071D660AD9000B0BCA /* NetworkingService.swift in Sources */,
+				1EEFEFD01D6CAD4500904729 /* User.swift in Sources */,
 				1E9AE16E1D623F7F000793FB /* ViewController.swift in Sources */,
 				1E9AE18A1D6241E5000793FB /* AddVenueTableTableViewController.swift in Sources */,
-				1E9AE1881D624122000793FB /* ProfileScreenViewController.swift in Sources */,
 				1E9AE16C1D623F7F000793FB /* AppDelegate.swift in Sources */,
 				1E9AE1AE1D637345000793FB /* VenueListTableViewController.swift in Sources */,
-				1E9AE1861D6240F5000793FB /* MapViewController.swift in Sources */,
+				1EEFEFD41D6E1A0700904729 /* PostVenueFile.swift in Sources */,
+				1EEFEFD61D6E67F100904729 /* PostTableViewCell.swift in Sources */,
 				1EF9986A1D64C21300F0D425 /* SIgnUPTableViewController.swift in Sources */,
 				1EB6DBEE1D6B555900821244 /* CustomUiImageView.swift in Sources */,
+				1EB6DBF51D6BD7BC00821244 /* MyProfileViewController.swift in Sources */,
 				1EB6DBF01D6B5A8900821244 /* CustomButton.swift in Sources */,
+				1EEFEFD81D6FF2E600904729 /* VenueDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

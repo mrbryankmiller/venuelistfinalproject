@@ -105,6 +105,19 @@ struct NetworkingService {
         
         }
     }
+        //Reset password
+        
+        func resetPassword (email:String){
+            FIRAuth.auth()?.sendPasswordResetWithEmail(email, completion:{(error) in
+                if error == nil {
+                    print("An Email with information on how to reset your password has been sent to you.")
+                    
+                }else {
+                    print(error!.localizedDescription)
+                }
+            })
+        }
+    
     
     //1st Function
     //we create the user 
@@ -123,7 +136,7 @@ struct NetworkingService {
         })
         
     }
-    
 }
+
 
 

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6D334F54DA8FED8F2C535D1059B053ECCB15374C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6D334F54DA8FED8F2C535D1059B053ECCB15374C" : 0,
+    "89417FD6D446E432071B3741F5BB5F727F6046B3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C9C03672-FE8C-49C7-A3AA-47FF10712667",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6D334F54DA8FED8F2C535D1059B053ECCB15374C" : "venuelistfinalproject\/",
+    "89417FD6D446E432071B3741F5BB5F727F6046B3" : "venuelistfinalproject\/VenueList%20Final%20Project\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VenueList Final Project",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VenueList Final Project.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mrbryankmiller\/venuelistfinalproject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D334F54DA8FED8F2C535D1059B053ECCB15374C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mrbryankmiller\/VenueList-Final-Project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "89417FD6D446E432071B3741F5BB5F727F6046B3"
+    }
+  ]
+}
