@@ -54,6 +54,7 @@ struct NetworkingService {
                 
                 if let user = user {
                     print("\(user.displayName!) has signed in successfully!")
+                    
                 }
                 
             }else{

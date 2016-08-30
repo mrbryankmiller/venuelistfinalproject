@@ -23,6 +23,9 @@ class MyProfileViewController: UIViewController {
     
     @IBOutlet weak var userImageView: CustomUiImageView!
     
+    
+    
+    
     var urlImage : String!
     
     
@@ -34,6 +37,54 @@ class MyProfileViewController: UIViewController {
     var storageRef: FIRStorage!{
         return FIRStorage.storage()
     }
+    
+    @IBAction func updateEmail(sender: AnyObject) {
+
+        if let user = FIRAuth.auth()?.currentUser {
+            user.updateEmail(emailTextFeild.text!, completion: { (error) in
+                if let error = error{
+                    print(error.localizedDescription)
+                }else{
+                    let alertView = UIAlertView(title: "Update Email", message: "You have successfully Updated Your Email!", delegate: self, cancelButtonTitle: "OK, Thanks!")
+                    alertView.show()
+                }
+            })
+        }
+        
+    }
+    
+    
+    @IBAction func updatePassword(sender: AnyObject) {
+        if let user = FIRAuth.auth()?.currentUser {
+            user.updateEmail(changePasswordTextField.text!, completion: { (error) in
+                if let error = error{
+                    print(error.localizedDescription)
+                }else{
+                    let alertView = UIAlertView(title: "Update Password", message: "You have successfully Updated Your Password!", delegate: self, cancelButtonTitle: "OK, Thanks!")
+                    alertView.show()
+                }
+            })
+        }
+        
+    }
+    
+    
+    
+    @IBAction func deleteAccount(sender: AnyObject) {
+        
+        let user = FIRAuth.auth()?.currentUser
+      
+        user?.deleteWithCompletion({ (error) in
+            if let error = error{
+                print(error.localizedDescription)
+            }else{
+                let alertView = UIAlertView(title: "Delete Account", message: "You have successfully Deleted Your Account!", delegate: self, cancelButtonTitle: "Sorry to See You Go!")
+                alertView.show()
+            }
+        })
+            
+}
+ 
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,8 +122,6 @@ class MyProfileViewController: UIViewController {
                 
                 
                 
-            
-        
                 
             })
                 

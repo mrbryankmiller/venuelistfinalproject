@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FirebaseAuth
 import FirebaseStorage
 import FirebaseDatabase
 
@@ -25,6 +24,9 @@ class VenueDetailTableViewController: UITableViewController {
     
     
     @IBOutlet weak var vdLocationLabel: UILabel!
+    
+    @IBOutlet weak var vdAddressLabel: UILabel!
+    
     
     @IBOutlet weak var vdDescriptionTextView: UITextView!
     
@@ -49,6 +51,8 @@ class VenueDetailTableViewController: UITableViewController {
         vdPriceLabel.text = currentVenuePost.price
         
         vdLocationLabel.text = currentVenuePost.location
+        
+        vdAddressLabel.text = currentVenuePost.address
         
         
         vdDescriptionTextView.text = currentVenuePost.description

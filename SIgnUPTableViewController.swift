@@ -43,30 +43,21 @@ class SIgnUPTableViewController: UITableViewController, UIImagePickerControllerD
         
         let data = UIImageJPEGRepresentation(self.userImageView.image!, 0.8)
         
-        networkingService.signUp(emailTextField.text!, username: usernameTextField.text! , password: passwordTextField.text!, data: data!) 
+        networkingService.signUp(emailTextField.text!, username: usernameTextField.text! , password: passwordTextField.text!, data: data!)
         
-//        let username: String 	 = usernameTextField.text!
-//       
-//        
-//  
-//        
-//        
-//        
-//        FIRAuth.auth()?.createUserWithEmail("kemgadi@kemgadi.com", password: "BryanRocksIOS") { (user, error) in
-//            // ...
-//            if error != nil {
-//                print("Error is \(error!.localizedDescription)")
-//            }
-//            else {
-//                print("Log in is successful ")
-//                print ("User displayname is \(user?.displayName)")
-//                print ("User email is \(user?.email)")
-//                print ("User Unique ID is \(user?.uid)")
-
+        let alert = UIAlertController(title:"Welcome To VenueList", message:"You have successfully Signed Up!", preferredStyle:UIAlertControllerStyle.Alert)
         
-    
+        alert.addAction(UIAlertAction(title:"OK",style: UIAlertActionStyle.Default, handler:nil)); self.presentViewController(alert, animated:true, completion:nil)
+        
+        
+        
+       //go to another view controller
+        
+//      let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewControllerWithIdentifier("Login")
+//       presentViewController(vc, animated: true, completion: nil)
+        
+       
     }
-
     
     @IBAction func choosePicture(sender: AnyObject) {
         let pickerController  = UIImagePickerController()

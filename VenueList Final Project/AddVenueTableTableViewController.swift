@@ -27,6 +27,9 @@ class AddVenueTableTableViewController: UITableViewController,UIImagePickerContr
     @IBOutlet weak var locationTextField: UITextField!
     
     
+    
+    @IBOutlet weak var addressTextField: UITextField!
+    
     @IBOutlet weak var occupancyTextfield: UITextField!
     
     @IBOutlet weak var priceTextField: UITextField!
@@ -86,7 +89,13 @@ class AddVenueTableTableViewController: UITableViewController,UIImagePickerContr
 //                let post = venuePost(venueImageStringUrl: String(metadata!.downloadURL()!), title: self.titleTextField.text!, postID: postID, description: descriptionText.text!, location: self.locationTextField.text!, price: self.priceTextField.text!,contact: contactTextField.text!, occupancy: occupancyTextfield.text!)
                
                 
-                let post = venuePost(imageURL: String(metadata!.downloadURL()!), title: self.titleTextField.text!, description: self.descriptionText.text!, occupancy: self.occupancyTextfield.text!, price: self.priceTextField.text!, contact: self.contactTextField.text!, location: self.locationTextField.text!, postId: postID)
+//                let post = venuePost(imageURL: String(metadata!.downloadURL()!), title: self.titleTextField.text!, description: self.descriptionText.text!, occupancy: self.occupancyTextfield.text!, price: self.priceTextField.text!, contact: self.contactTextField.text!, location: self.locationTextField.text!, postId: postID)
+                
+                
+                let post = venuePost(imageURL: String(metadata!.downloadURL()!), title: self.titleTextField.text!, address: self.addressTextField.text!, description: self.descriptionText.text!, occupancy: self.occupancyTextfield.text!, price: self.priceTextField.text!, contact: self.contactTextField.text!, location: self.locationTextField.text!, postId: postID)
+                
+            
+                
                 
                postref.setValue(post.toAnyObject())
                 

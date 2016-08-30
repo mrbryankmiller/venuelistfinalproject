@@ -39,8 +39,20 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginAction(sender: AnyObject){
         networkService.signIn(emailTextField.text!, password: passwordTextField.text!)
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home")
+        
+        
+        ///go to Home Screen 
+        
+       let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home")
         presentViewController(vc, animated: true, completion: nil)
+       
+    //alert when user signs in 
+        
+        
+//        
+//        let alert = UIAlertController(title:"Welcome To VenueList", message:"You have successfully Signed In!", preferredStyle:UIAlertControllerStyle.Alert)
+//        
+//        alert.addAction(UIAlertAction(title:"OK",style: UIAlertActionStyle.Default, handler:nil)); self.presentViewController(alert, animated:true, completion:nil)
         
         
     }
