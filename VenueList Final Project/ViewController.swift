@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseStorage
+import FirebaseDatabase
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var ExploreVenuebutton: UIButton!
+    
+    @IBOutlet weak var searchVenueButton: CustomButton!
     
     
     @IBOutlet weak var ListVenueButton: UIButton!
@@ -25,10 +29,22 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // sign in annonymous user 
 
-//   // @IBAction func explorvenues(sender: AnyObject) {
-//        performSegueWithIdentifier("gotovenues",sender: nil)
-//        
+    @IBAction func searchVenueAction(sender: AnyObject) {
+        
+        FIRAuth.auth()?.signInAnonymouslyWithCompletion({ (user, error) in
+            if error != nil {
+                print (error)
+                return
+            }
+            print("User Signed in anonymously with udid:" + user!.uid)
+        })
+    }
+
+       
     
 }
 

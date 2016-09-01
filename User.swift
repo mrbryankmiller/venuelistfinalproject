@@ -23,6 +23,8 @@ struct User {
         key = snapshot.key
         
         username = snapshot.value!["username"] as! String
+    
+        
         
         email  = snapshot.value!["email"] as! String
         

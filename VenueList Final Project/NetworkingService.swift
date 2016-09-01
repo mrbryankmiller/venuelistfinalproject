@@ -129,7 +129,14 @@ struct NetworkingService {
         FIRAuth.auth()?.createUserWithEmail(email, password: password, completion: {(user, error) in
             
             if error == nil {
+                //success case
                 self.setUserInfo(user, username: username, password: password, data: data)
+                
+                
+                //send user email verification 
+                
+                //user?.sendEmailVerificationWithCompletion( nil)
+                
             }else {
                 print (error!.localizedDescription)
             }

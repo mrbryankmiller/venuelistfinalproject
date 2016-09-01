@@ -27,6 +27,19 @@ class ResetPasswordViewController: UIViewController {
     }
     
 
+
+
+func textFieldShouldReturn(textField: UITextField) -> Bool {
+    
+    print("resign")
+    
+    textField.resignFirstResponder()
+    return true
+    
+    
+}
+
+
     @IBAction func resetPasswordAction(sender: AnyObject) {
         
       networkingService.resetPassword(emailTextField.text!)

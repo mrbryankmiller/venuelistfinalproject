@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SIgnUPTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SIgnUPTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate{
 
     
     @IBOutlet weak var userImageView: UIImageView!
@@ -27,15 +27,39 @@ class SIgnUPTableViewController: UITableViewController, UIImagePickerControllerD
 
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
+    
         
     
         
     }
     
+    ///return Keyboard
     
-
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        if textField == usernameTextField{
+            usernameTextField.resignFirstResponder()
+            emailTextField.becomeFirstResponder()
+            
+        }
+        
+        if textField == emailTextField{
+            emailTextField.resignFirstResponder()
+            
+            passwordTextField.becomeFirstResponder()
+        }
+        
+        if textField == passwordTextField{
+            passwordTextField.resignFirstResponder()
+            
+            print("resign")
+        }
+        
+        return true
+    }
     
     
     
@@ -47,8 +71,24 @@ class SIgnUPTableViewController: UITableViewController, UIImagePickerControllerD
         
         let alert = UIAlertController(title:"Welcome To VenueList", message:"You have successfully Signed Up!", preferredStyle:UIAlertControllerStyle.Alert)
         
-        alert.addAction(UIAlertAction(title:"OK",style: UIAlertActionStyle.Default, handler:nil)); self.presentViewController(alert, animated:true, completion:nil)
         
+        func someHandler(alert: UIAlertAction!) {
+            // Do something...
+            print("Ok Button has been clicked")
+            self.performSegueWithIdentifier("returnBack", sender: nil)
+
+        }
+        
+    
+
+        let alertAction = UIAlertAction(title: "OK",style:UIAlertActionStyle.Default, handler:someHandler);
+            
+                alert.addAction(alertAction);
+        
+        self.presentViewController(alert, animated: true, completion:  {
+                    print("Got it. Presentation complete")
+                    
+                })
         
         
        //go to another view controller

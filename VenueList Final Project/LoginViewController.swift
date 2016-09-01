@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,UITextFieldDelegate {
     
 
     @IBOutlet weak var passwordTextField: UITextField!
@@ -29,6 +29,31 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    ///return Keyboard 
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        if textField == emailTextField{
+            emailTextField.resignFirstResponder()
+
+            passwordTextField.becomeFirstResponder()
+        }
+        
+            if textField == passwordTextField{
+        passwordTextField.resignFirstResponder()
+        
+        print("resign")
+        }
+        
+        return true
+    }
+    
+    
+    
+    
+    
+    
     
     
     // reverses the current segue

@@ -84,12 +84,47 @@ class MyProfileViewController: UIViewController {
         })
             
 }
- 
+ // redirect annonymous user to login
 
+    override func viewDidAppear(animated: Bool) {
+        
+        
+    }
+    
+    private func segueToLoginScreenForAnonymousUser() {
+        
+        let myCurrentUser = FIRAuth.auth()?.currentUser
+        
+        
+        //FIRAuth.auth()?.currentUser?.anonymous
+        if myCurrentUser!.anonymous {
+            //my user is an anonymous user
+            
+            self.performSegueWithIdentifier("goToLogin", sender: nil)
+            
+            
+            //self.navigationController?.performSegueWithIdentifier("goToLogin", sender: nil)
+        }
+        else{
+            //my user is a regular user
+        }
+
+    }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let currentUser = FIRAuth.auth()?.currentUser
+        
+        if currentUser!.anonymous {
+            segueToLoginScreenForAnonymousUser()
+            return
+        }
+        
+        //status bar tint color 
+        
+         UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
         
         if FIRAuth.auth()?.currentUser == nil {
         
@@ -145,6 +180,8 @@ class MyProfileViewController: UIViewController {
     @IBAction func LogOutAction(sender: AnyObject) {
         
         if FIRAuth.auth()?.currentUser != nil {
+            
+            print("User Logged out!")
         
         do {
             

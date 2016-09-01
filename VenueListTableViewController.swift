@@ -17,9 +17,24 @@ class VenueListTableViewController: UITableViewController {
         return FIRDatabase.database().reference()
     }
    
-   
+    
+    override func viewDidAppear(animated: Bool) {
+        UIApplication.sharedApplication().statusBarStyle = .Default
+    }
+    
+    
+    
+
     override func viewDidLoad() {
+        
+        
+        
         super.viewDidLoad()
+        
+        // Customize Status bar color
+        
+ // UIApplication.sharedApplication().statusBarStyle = .Default
+
         
     let venueRef = databaseRef.child("posts")
     venueRef.observeEventType(.Value, withBlock: { (snapshot) in
@@ -98,11 +113,38 @@ class VenueListTableViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         if segue.identifier == "passData"{
             let indexPath = tableView.indexPathForSelectedRow!
             let venueDetailVC = segue.destinationViewController as! VenueDetailTableViewController
-            venueDetailVC.currentVenuePost = venuePostArray[indexPath.row]}
+            venueDetailVC.currentVenuePost = venuePostArray[indexPath.row]
+        }
     }
+    
+    //fucntion to direct user to login
+    @IBAction func addButtonAction(sender: AnyObject) {
+        
+        let myCurrentUser = FIRAuth.auth()?.currentUser
+        
+        
+        //FIRAuth.auth()?.currentUser?.anonymous
+        if myCurrentUser!.anonymous {
+            //my user is an anonymous user
+            
+              self.performSegueWithIdentifier("goToLoginPage", sender: nil)
+        }
+        else{
+            
+            
+        }
+        
+    }
+    
+
+    
+    
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

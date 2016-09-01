@@ -28,14 +28,19 @@ class AddVenueTableTableViewController: UITableViewController,UIImagePickerContr
     
     
     
-    @IBOutlet weak var addressTextField: UITextField!
+    //@IBOutlet weak var addressTextField: UITextField!
+    
+    @IBOutlet weak var addressTextView: UITextView!
     
     @IBOutlet weak var occupancyTextfield: UITextField!
     
     @IBOutlet weak var priceTextField: UITextField!
     
     
-    @IBOutlet weak var contactTextField: UITextField!
+   // @IBOutlet weak var contactTextField: UITextField!
+    
+    
+    @IBOutlet weak var contactTextView: UITextView!
     
     var databaseRef: FIRDatabaseReference!{
         return FIRDatabase.database().reference()
@@ -48,6 +53,17 @@ class AddVenueTableTableViewController: UITableViewController,UIImagePickerContr
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //set rounded border
+        self.descriptionText.layer.borderWidth = 0.1
+        self.descriptionText.layer.cornerRadius = 8
+        
+        
+        self.addressTextView.layer.borderWidth = 0.1
+        self.addressTextView.layer.cornerRadius = 8
+        
+        self.contactTextView.layer.borderWidth = 0.1
+        self.contactTextView.layer.cornerRadius = 8
 
         
     }
@@ -57,6 +73,62 @@ class AddVenueTableTableViewController: UITableViewController,UIImagePickerContr
         // Dispose of any resources that can be recreated.
     }
 
+    
+    ///return Keyboards in order
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        if textField == titleTextField{
+            titleTextField.resignFirstResponder()
+            
+            descriptionText.becomeFirstResponder()
+        }
+        
+        if textField == descriptionText{
+            descriptionText.resignFirstResponder()
+            
+            addressTextView.becomeFirstResponder()
+        }
+        
+        if textField == addressTextView{
+            addressTextView.resignFirstResponder()
+            
+            locationTextField.becomeFirstResponder()
+        }
+        
+        if textField == locationTextField{
+            locationTextField.resignFirstResponder()
+            
+            occupancyTextfield.becomeFirstResponder()
+        }
+            
+            if textField == occupancyTextfield{
+                occupancyTextfield.resignFirstResponder()
+                
+                priceTextField.becomeFirstResponder()
+        }
+        if textField == priceTextField{
+            priceTextField.resignFirstResponder()
+            
+            contactTextView.becomeFirstResponder()
+        }
+        if textField == contactTextView{
+            contactTextView.resignFirstResponder()
+
+        
+        
+            
+            print("resign")
+        }
+        
+        return true
+    }
+    
+    
+
+    
+    
+    
     @IBAction func saveButtonAction(sender: AnyObject) {
         
 //        var contactinfo = ""
@@ -86,13 +158,9 @@ class AddVenueTableTableViewController: UITableViewController,UIImagePickerContr
                 
                 let postref = self.databaseRef.child("posts").childByAutoId()
                 
-//                let post = venuePost(venueImageStringUrl: String(metadata!.downloadURL()!), title: self.titleTextField.text!, postID: postID, description: descriptionText.text!, location: self.locationTextField.text!, price: self.priceTextField.text!,contact: contactTextField.text!, occupancy: occupancyTextfield.text!)
-               
-                
-//                let post = venuePost(imageURL: String(metadata!.downloadURL()!), title: self.titleTextField.text!, description: self.descriptionText.text!, occupancy: self.occupancyTextfield.text!, price: self.priceTextField.text!, contact: self.contactTextField.text!, location: self.locationTextField.text!, postId: postID)
                 
                 
-                let post = venuePost(imageURL: String(metadata!.downloadURL()!), title: self.titleTextField.text!, address: self.addressTextField.text!, description: self.descriptionText.text!, occupancy: self.occupancyTextfield.text!, price: self.priceTextField.text!, contact: self.contactTextField.text!, location: self.locationTextField.text!, postId: postID)
+                let post = venuePost(imageURL: String(metadata!.downloadURL()!), title: self.titleTextField.text!, address: self.addressTextView.text!, description: self.descriptionText.text!, occupancy: self.occupancyTextfield.text!, price: self.priceTextField.text!, contact: self.contactTextView.text!, location: self.locationTextField.text!, postId: postID)
                 
             
                 

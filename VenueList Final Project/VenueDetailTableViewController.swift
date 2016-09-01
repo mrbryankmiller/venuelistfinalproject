@@ -25,8 +25,11 @@ class VenueDetailTableViewController: UITableViewController {
     
     @IBOutlet weak var vdLocationLabel: UILabel!
     
-    @IBOutlet weak var vdAddressLabel: UILabel!
+   // @IBOutlet weak var vdAddressLabel: UILabel!
     
+    
+    @IBOutlet weak var vdaddressTextView:
+    UITextView!
     
     @IBOutlet weak var vdDescriptionTextView: UITextView!
     
@@ -34,7 +37,11 @@ class VenueDetailTableViewController: UITableViewController {
     @IBOutlet weak var vdOccupancyLabel: UILabel!
     
     
-    @IBOutlet weak var vdContactLabel: UILabel!
+
+   // @IBOutlet weak var vdContactLabel: UILabel!
+    
+    
+    @IBOutlet weak var vdContactTextView: UITextView!
     
     var currentVenuePost :  venuePost!
         
@@ -46,20 +53,26 @@ class VenueDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //status bar color
+         UIApplication.sharedApplication().statusBarStyle = .Default
+        
+        
         
         vdTitleLabel.text = currentVenuePost.title
         vdPriceLabel.text = currentVenuePost.price
         
         vdLocationLabel.text = currentVenuePost.location
         
-        vdAddressLabel.text = currentVenuePost.address
+        vdaddressTextView.text = currentVenuePost.address
         
         
         vdDescriptionTextView.text = currentVenuePost.description
         
         vdOccupancyLabel.text = currentVenuePost.occupancy
         
-        vdContactLabel.text = currentVenuePost.contact
+        vdContactTextView.text = currentVenuePost.contact
+        
+        
 
         
         

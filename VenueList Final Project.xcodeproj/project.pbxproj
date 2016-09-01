@@ -223,8 +223,8 @@
 		1EF998661D64338800F0D425 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1E9AE16B1D623F7F000793FB /* AppDelegate.swift */,
 				1E9AE1AD1D637345000793FB /* VenueListTableViewController.swift */,
+				1E9AE16B1D623F7F000793FB /* AppDelegate.swift */,
 				1E9AE1891D6241E5000793FB /* AddVenueTableTableViewController.swift */,
 				1E9AE16D1D623F7F000793FB /* ViewController.swift */,
 				1EF998691D64C21300F0D425 /* SIgnUPTableViewController.swift */,
